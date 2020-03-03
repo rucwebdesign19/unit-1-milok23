@@ -1,14 +1,15 @@
 html{
 font-family: "Times New Roman", Times, serif;
+font-size: 1.4em;
+line-height: 1.2;
+background-image: url("dick.png");
+box-sizing: border-box;
+background-color: #cccccc;
+}
 
-}
-body{
-    font-size: 1.4em;
-    line-height: 1.2;
-}
 
 h1{
-    font-family: Papyrus, fantasy;
+    font-family: 'Trade Winds', Times, serif; ;
     font-size: 3em;
     font-style: normal;
     font-variant: normal;
@@ -17,7 +18,7 @@ h1{
 }
 
 h2 {
-    font-family: Papyrus, fantasy;
+    font-family: 'Trade Winds', Times, serif; ;
     font-size: 1.5em;
     font-style: normal;
     font-variant: normal;
@@ -25,12 +26,81 @@ h2 {
     line-height: 1.2;
 }
 
+ul {
+  list-style-type: none;
+}
+
+.book {
+  background-color: rgba(0, 150, 250, 0.35);
+  border-radius: 10px;
+}
+
+.navigation {
+width: calc(100% - 2em);
+
+  padding: 1em;
+  background-color: rgba(252, 48, 3, .8);
+  -webkit-box-shadow: 10px 10px 46px -3px rgba(255,97,97,0.59);
+-moz-box-shadow: 10px 10px 46px -3px rgba(255,97,97,0.59);
+box-shadow: 10px 10px 46px -3px rgba(255,97,97,0.59);
+Copy Text
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.picture {
+  max-width: 100%;
+  height: auto;
+
+}
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info {
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+.summary
+{
+    font-family: 'Spartan', sana ;
+      margin: 0;
+      color: blue;
+}
+
+.title
+{  margin: 0;
+    color: blue;
+}
+
 @media only screen and (min-width: 600px)
 {
-    .book{width:75vw;}
-}
+    .book{width:75vw;
+    margin: 0 auto;
+    margin-top: 20px;}
+    .picture {
+        max-width: 80%;
+        float:right;
+      }
 
 @media only screen and (min-width: 900px)
 {
     .book{width:50vw;}
-    }
+    .picture {
+        max-width: 90%;
+        float:right;
+      }
